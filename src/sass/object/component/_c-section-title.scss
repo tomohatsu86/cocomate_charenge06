@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.c-section-title{
+  font-family: $font-main;
+  font-size: myrem(28);
+  font-weight: 500;
+  line-height: calc(41 / 28);
+  letter-spacing: 0;
+  color: $text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-section-title::before{
+  content: "";
+  display: inline-block;
+  width: myrem(50);
+  height: myrem(42);
+  background: url(../images/logo_small.svg) no-repeat center center/contain;
+  margin-bottom: myrem(27);
+}
+.c-section-title::after{
+  content: attr(data-en);
+  display: inline-block;
+  font-family: $font-main;
+  font-size: myrem(12);
+  font-weight: 500;
+  line-height: calc(17 / 12);
+  letter-spacing: 0;
+  color: $text;
+  text-transform: capitalize;
+  margin-top: myrem(11);
+}
+.c-section-title.c-section-title--no-logo::before{
+  display: none;
+}
+.c-section-title.c-section-title--align-left{
+  align-items: flex-start;
+}

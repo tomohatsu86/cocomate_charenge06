@@ -1,0 +1,110 @@
+@use "global" as *;
+
+.p-mv{
+  width: 100%;
+  // height: calc(100vh - #{myrem(80)});
+  
+  @include mq("md"){
+    // height: calc(100vh - #{myrem(103)});
+  }
+}
+.p-mv__wrapper{
+  height: inherit;
+  position: relative;
+  padding-top: myrem(80);
+  
+  @include mq("md"){
+    // min-height: myrem(703);
+    padding-top: myrem(103);
+    width: 100%;
+  }
+  
+}
+.p-mv__img{
+  width: 100%;
+  padding: 0 myrem(30);
+  position: relative;
+  
+  @include mq("md"){
+    padding: 0 myrem(120);
+  }
+}
+.p-mv__img::before{
+  @include mq("md"){
+  content: "";
+  width: myrem(720);
+  height: myrem(229);
+  background-color: $bg_yellow_green;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  }
+}
+.p-mv__img img{
+  aspect-ratio: 375 / 400;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: myrem(60);
+  
+  @include mq("md"){
+    aspect-ratio: 1200 / 600;
+    border-top-left-radius: myrem(120);
+  }
+}
+
+.p-mv__catchcopy{
+  font-family: $font-main;
+  font-size: myrem(18);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  color: $text;
+  width: myrem(250);
+  position: absolute;
+  bottom: myrem(270);
+  left: 10%;
+  
+  @include mq("md"){
+    width: myrem(370);
+    font-size: myrem(32);
+    top: myrem(332);
+    left: calc(344 / 1440) *100%;
+  }
+}
+.p-mv__catchcopy span{
+  display: block;
+  font-family: $font-main;
+  font-size: myrem(12);
+  font-weight: 500;
+  line-height: calc(41 / 28);
+  letter-spacing: 0;
+  margin-top: 0;
+  
+  @include mq("md"){
+    font-size: myrem(16);
+    margin-top: myrem(16);
+  }
+}
+.p-mv__copyright{
+  width: 188px;
+  position: absolute;
+  top: 42%;
+  right: calc((#{myrem(10)}/ 2) - (188px / 2));
+  transform: rotate(-90deg) translate(0, -50%);
+  
+  @include mq("md"){
+    right: calc((#{myrem(100)}/ 2) - (188px / 2));
+  }
+}
+.p-mv__copyright small{
+  font-family: $font-main;
+  font-size: myrem(10);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.14em;
+  color: $text;
+  margin: 0;
+}
+
