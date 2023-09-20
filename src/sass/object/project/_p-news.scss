@@ -67,12 +67,12 @@
   margin-top: myrem(24);
 }
 .p-news__date{
-  font-family: $font-main;
+  font-family: $font-ja;
   font-size: myrem(16);
   font-weight: 500;
   line-height: calc(23 / 16);
   letter-spacing: 0.1em;
-  color: $logo_green;
+  color: $logo_color;
   margin-right: myrem(24);
   flex-shrink: 0;
   
@@ -81,7 +81,7 @@
   }
 }
 .p-news__title {
-  font-family: $font-main;
+  font-family: $font-ja;
   font-size: myrem(16);
   font-weight: 400;
   line-height: calc(23 / 16);

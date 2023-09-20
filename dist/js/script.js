@@ -37,11 +37,7 @@ jQuery(function ($) {
 
   $('.js-hamburger').click(function () {
     $(this).toggleClass('is-open');
-    if( $(this).hasClass('is-open') ){
-      $('.js-drawer').fadeIn();
-    }else{
-      $('.js-drawer').fadeOut();
-    }
+    $('.js-drawer').toggleClass('is-open');
   });
 
 });

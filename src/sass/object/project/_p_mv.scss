@@ -34,7 +34,7 @@
   content: "";
   width: myrem(720);
   height: myrem(229);
-  background-color: $bg_yellow_green;
+  background-color: #fff;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -55,7 +55,7 @@
 }
 
 .p-mv__catchcopy{
-  font-family: $font-main;
+  font-family: $font-ja;
   font-size: myrem(18);
   font-weight: 400;
   line-height: 1.6;
@@ -75,7 +75,7 @@
 }
 .p-mv__catchcopy span{
   display: block;
-  font-family: $font-main;
+  font-family: $font-ja;
   font-size: myrem(12);
   font-weight: 500;
   line-height: calc(41 / 28);
@@ -99,7 +99,7 @@
   }
 }
 .p-mv__copyright small{
-  font-family: $font-main;
+  font-family: $font-ja;
   font-size: myrem(10);
   font-weight: 400;
   line-height: 1.6;

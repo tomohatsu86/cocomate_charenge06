@@ -17,7 +17,7 @@
   }
 }
 .p-card__title{
-  font-family: $font-main;
+  font-family: $font-ja;
   font-size: myrem(20);
   font-weight: 400;
   line-height: calc(29 / 20);
@@ -37,7 +37,7 @@
   object-fit: cover;
 }
 .p-card__excerpt p{
-  font-family: $font-main;
+  font-family: $font-ja;
   font-size: myrem(15);
   font-weight: 400;
   line-height: calc(27/15);

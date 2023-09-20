@@ -1,56 +1,59 @@
 @use "global" as *;
 
 .c-btn{
-  font-family: $font-main;
-  font-size: myrem(16);
-  font-weight: 500;
-  line-height: calc(23 / 16);
-  letter-spacing: 0;
-  color: $white;
   text-align: center;
-  background-color: $logo_green;
+  border: myrem(1) solid $black;
+  background-color: $black;
+  background-color: transparent;
+  // border-radius: myrem(10);
   display: inline-block;
-  padding: myrem(24) myrem(80);
-  min-width: myrem(240);
-  border-radius: myrem(36);
+  padding: myrem(19) myrem(15);
+  min-width: myrem(272);
   position: relative;
-  transition: all .3s;
 }
 @media (hover: hover) and (pointer: fine) {
   .c-btn:hover{
-    opacity: 0.7;
+    opacity: 1;
+  }
+  .c-btn:hover span{
+    color: $white;
+    opacity: 1;
   }
 }
+.c-btn span{
+  font-family: $font-ja;
+  font-size: myrem(15);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: $text;
+  position: relative;
+  z-index: 2;
+}
+
 .c-btn::after{
   content: "";
-  display: inline-block;
-  width: myrem(8);
-  height: myrem(11);
-  background: url(../images/icon_arrow.png) no-repeat center center/contain;
+  display: block;
+  background-color: $white;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border-radius: myrem(10);
   position: absolute;
-  top: 50%;
-  right: myrem(24);
-  transform: translateY(-50%);
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
   transition: all .3s;
 }
 @media (hover: hover) and (pointer: fine) {
-  .c-btn:hover:after{
-    right: myrem(12);
+  .c-btn:hover::after{
+    background-color: $black;
+    color: $white;
+    opacity: 1;
   }
 }
 
-.c-btn.c-btn--pink{
-  background-color: $btn_pink;
-}
-.c-btn.c-btn--small{
-  padding: myrem(16) myrem(59) myrem(16) myrem(45);
-  min-width: initial;
-}
-.c-btn.c-btn--noarrow{
-  padding: myrem(24) myrem(64);
-  padding: myrem(24) 64px;
-}
-.c-btn.c-btn--noarrow::after{
-  display: none;
-  border: 0;
+.c-btn--black{
+  
 }

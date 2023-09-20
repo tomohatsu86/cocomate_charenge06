@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.c-btn-header{
+  font-family: $font-ja;
+  font-size: myrem(16);
+  font-weight: 400;
+  line-height: calc(23 / 16);
+  letter-spacing: 0.04em;
+  color: $white;
+  text-align: center;
+  border: 1px solid $white;
+  display: inline-block;
+  padding: myrem(15);
+  min-width: myrem(170);
+  transition: all .3s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .c-btn-header:hover{
+    background-color: $white;
+    color: $text;
+    opacity: 1;
+  }
+}

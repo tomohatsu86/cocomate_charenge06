@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .c-section-title{
-  font-family: $font-main;
+  font-family: $font-ja;
   font-size: myrem(28);
   font-weight: 500;
   line-height: calc(41 / 28);
@@ -22,7 +22,7 @@
 .c-section-title::after{
   content: attr(data-en);
   display: inline-block;
-  font-family: $font-main;
+  font-family: $font-ja;
   font-size: myrem(12);
   font-weight: 500;
   line-height: calc(17 / 12);
