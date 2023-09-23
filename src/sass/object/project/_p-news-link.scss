@@ -1,0 +1,117 @@
+@use "global" as *;
+
+.p-news-link{
+  display: block;
+  width: 100%;
+  max-width: myrem(780);
+}
+.p-news-link__body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  @include mq("md"){
+    flex-direction: row;
+  }
+}
+.p-news-link__img {
+  width: myrem(200);
+  position: relative;
+  flex-shrink: 0;
+}
+.p-news-link__img img{
+  aspect-ratio: 200 / 128;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.p-news-link__text {
+  font-family: $font-ja;
+  font-size: myrem(15);
+  font-weight: 400;
+  line-height: calc(15 / 15);
+  letter-spacing: 0.04em;
+  color: $text;
+  margin-left: myrem(48);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.p-news-link__info {
+
+}
+.p-news-link__date {
+
+}
+.p-news-link__title {
+  margin-top: myrem(12);
+}
+.p-news-link__text::after{
+  content: "";
+  display: block;
+  background: url(../images/icon_arrow.svg) no-repeat center center/contain;
+  width: myrem(9);
+  height: myrem(11);
+}
+
+
+
+
+
+
+
+
+.p-card{
+  width: 100%;
+  border-radius: myrem(16);
+  background-color: $white;
+  box-shadow: 0 myrem(10) myrem(20) 0 rgba($color: #D2E991, $alpha: 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.p-card__body{
+  padding: myrem(30) myrem(30) 0;
+  
+  @include mq("md"){
+    padding: myrem(40) myrem(40) 0;
+  }
+}
+.p-card__title{
+  font-family: $font-ja;
+  font-size: myrem(20);
+  font-weight: 400;
+  line-height: calc(29 / 20);
+  letter-spacing: 0;
+  color: $text;
+  text-align: center;
+}
+.p-card__img{
+  width: 100%;
+  position: relative;
+  margin-top: myrem(32);
+}
+.p-card__img img{
+  aspect-ratio: 320 / 185;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.p-card__excerpt p{
+  font-family: $font-ja;
+  font-size: myrem(15);
+  font-weight: 400;
+  line-height: calc(27/15);
+  letter-spacing: 0;
+  color: $text;
+  margin-top: myrem(16);
+  
+}
+.p-card__btn{
+  width: 100%;
+  text-align: center;
+  padding-top: myrem(55);
+  margin-bottom: myrem(-36);
+}

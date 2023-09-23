@@ -1,39 +1,46 @@
 @use "global" as *;
 
+.test{
+  width: 50%;
+}
+
+
 .c-section-title{
+  display: block;
+  width: 100%;
+  height: myrem(160);
   font-family: $font-ja;
-  font-size: myrem(28);
-  font-weight: 500;
-  line-height: calc(41 / 28);
-  letter-spacing: 0;
+  font-size: myrem(20);
+  font-weight: 400;
+  line-height: calc(20/20);
+  letter-spacing: 0.04em;
   color: $text;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-left: myrem(120);
+  writing-mode: vertical-lr;
+  position: relative;
+  z-index: 10;
+
 }
 .c-section-title::before{
-  content: "";
-  display: inline-block;
-  width: myrem(50);
-  height: myrem(42);
-  background: url(../images/logo_small.svg) no-repeat center center/contain;
-  margin-bottom: myrem(27);
-}
-.c-section-title::after{
   content: attr(data-en);
   display: inline-block;
-  font-family: $font-ja;
-  font-size: myrem(12);
-  font-weight: 500;
-  line-height: calc(17 / 12);
-  letter-spacing: 0;
-  color: $text;
+  display: block;
+  width: 100%;
+  font-family: $font-en;
+  font-size: myrem(160);
+  font-weight: 400;
+  line-height: calc(160 / 160);
+  letter-spacing: 0.04em;
+  color: #F3F3F3;
+  writing-mode: initial;
+  white-space:nowrap;
   text-transform: capitalize;
-  margin-top: myrem(11);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-.c-section-title.c-section-title--no-logo::before{
-  display: none;
-}
-.c-section-title.c-section-title--align-left{
-  align-items: flex-start;
+
+.c-section-title.c-section-title--white::after{
+  color: #fff;
 }
