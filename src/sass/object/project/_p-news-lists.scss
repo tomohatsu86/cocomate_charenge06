@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.p-news-list{
+  
+}
+.p-news-list__item:first-child{
+  padding-bottom: myrem(30);
+}
+.p-news-list__item:nth-child(n+2){
+  padding-top: myrem(30);
+  border-top: myrem(2) solid $white;
+}

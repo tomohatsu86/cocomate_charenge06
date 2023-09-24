@@ -2,40 +2,87 @@
 
 .p-card{
   width: 100%;
-  border-radius: myrem(16);
+  width: 352px;
   background-color: $white;
-  box-shadow: 0 myrem(10) myrem(20) 0 rgba($color: #D2E991, $alpha: 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  padding-top: myrem(40);
+  margin-left: 100px;
 }
-.p-card__body{
-  padding: myrem(30) myrem(30) 0;
-  
-  @include mq("md"){
-    padding: myrem(40) myrem(40) 0;
-  }
-}
-.p-card__title{
+
+.p-card__category{
   font-family: $font-ja;
-  font-size: myrem(20);
+  font-size: myrem(60);
   font-weight: 400;
-  line-height: calc(29 / 20);
-  letter-spacing: 0;
-  color: $text;
-  text-align: center;
+  line-height: calc(60 / 60);
+  letter-spacing: 0.04em;
+  color: #8C7400;
+  width: 100%;
+  writing-mode: vertical-lr;
+  position: absolute;
+  top: 0;
+  left: myrem(-30);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
+.p-card__category span{
+  content: "";
+  display: inline-block;
+  font-family: $font-ja;
+  font-size: myrem(14);
+  font-weight: 400;
+  line-height: calc(14 / 14);
+  letter-spacing: 0.04em;
+  color: #F3F3F3;
+  color: #000;
+  writing-mode: initial;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  margin-top: myrem(14);
+  margin-right: myrem(-30);
+}
+.p-card__category span::before{
+  content: "";
+  display: inline-block;
+  width: myrem(38);
+  height: myrem(1);
+  background-color: $black;
+  margin-right: myrem(8);
+}
+
+
 .p-card__img{
   width: 100%;
   position: relative;
-  margin-top: myrem(32);
 }
 .p-card__img img{
-  aspect-ratio: 320 / 185;
+  aspect-ratio: 352 / 352;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+.p-card__body{
+  
+  @include mq("md"){
+
+  }
+}
+.p-card__title{
+  font-family: $font-ja;
+  font-size: myrem(28);
+  font-weight: 400;
+  line-height: calc(34 / 28);
+  letter-spacing: 0.04em;
+  color: $text;
+}
+
+
 .p-card__excerpt p{
   font-family: $font-ja;
   font-size: myrem(15);

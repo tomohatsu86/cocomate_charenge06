@@ -23,7 +23,6 @@
 }
 .c-section-title::before{
   content: attr(data-en);
-  display: inline-block;
   display: block;
   width: 100%;
   font-family: $font-en;
