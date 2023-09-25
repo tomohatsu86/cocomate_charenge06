@@ -99,3 +99,52 @@ $(window).scroll(function () {
   window.addEventListener('load', scrollAnimationFunc);
   window.addEventListener('scroll', scrollAnimationFunc);
 });
+
+
+//ギャラリースライダー
+const gallerySwiper = new Swiper('#gallery-slide', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  speed: 9000,
+  centeredSlides: true,
+  
+  autoplay: { 
+    delay: 0,
+    disableOnInteraction: false,
+    waitForTransition: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+//ココメイトステイスライダー
+const aboutSwiper = new Swiper('#about-slide', {
+  // loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  speed: 6000,
+  centeredSlides: true,
+  
+  autoplay: { 
+    delay: 0,
+    disableOnInteraction: false,
+    waitForTransition: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 24,
+    },
+    1200: {
+      slidesPerView: 'auto',
+    },
+  },
+});

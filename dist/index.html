@@ -25,9 +25,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
   <!-- css -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" >
   <link rel="stylesheet" href="./css/styles.css">
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/swiper-bundle.min.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
 <body>
@@ -77,6 +79,7 @@
   
   
   <main>
+    <!-- コンポーネント -->
     <div class="l-inner">
       <p class="p-test">コンポーネントだよ\(^o^)/</p>
     </div>
@@ -90,7 +93,7 @@
       <span></span>
       <span></span>
     </a>
-    <a href="" class="c-btn c-btn--black">
+    <a href="" class="c-btn c-btn--white">
       <span></span>
       <span></span>
       客室について
@@ -99,9 +102,7 @@
     </a>
     <a href="" class="c-text-btn">詳しく見る</a>
 
-    <div class="test">
-      <h2 class="c-section-title" data-en="guest room">客室案内</h2>
-    </div>
+    <h2 class="c-section-title" data-en="guest room">客室案内</h2>
 
     <h2 class="c-section-title c-section-title--white" data-en="news">お知らせ</h2>
 
@@ -138,44 +139,137 @@
       </li>
     </ul>
 
-    <div class="p-card">
-      <div class="p-card__category">
-        歴史
-        <span>history</span>
-      </div>
-      <figure class="p-card__img">
-        <img src="images/img_card01.jpg" alt="園庭を眺める人の後ろ姿">
-      </figure>
-      <div class="p-card__body">
-        <h3 class="p-card__title">歴史を学ぶ</h3>
-        <div class="p-card__excerpt">
-          <p>街のいたるところに歴史を物語る建物や史跡が残されています。</p>
+    <div class="p-cards">
+      <div class="p-cards__item p-card">
+        <div class="p-card__category">
+          歴史
+          <span>history</span>
+        </div>
+        <figure class="p-card__img">
+          <img src="images/img_card01.jpg" alt="園庭を眺める人の後ろ姿">
+        </figure>
+        <div class="p-card__body">
+          <h3 class="p-card__title">歴史を学ぶ</h3>
+          <div class="p-card__excerpt">
+            <p>街のいたるところに歴史を物語る建物や史跡が残されています。</p>
+          </div>
+          <div class="p-card__btn">
+            <a href="" class="c-text-btn">詳しく見る</a>
+          </div>
         </div>
       </div>
-      <div class="p-card__btn">
-        <a href="" class="c-text-btn">詳しく見る</a>
+      <div class="p-cards__item p-card">
+        <div class="p-card__category">
+          観光
+          <span>tourism</span>
+        </div>
+        <figure class="p-card__img">
+          <img src="images/img_card02.jpg" alt="滝の写真">
+        </figure>
+        <div class="p-card__body">
+          <h3 class="p-card__title">自然に触れる</h3>
+          <div class="p-card__excerpt">
+            <p>周辺には雄大な自然が織りなす絶景スポットも多数ございます。</p>
+          </div>
+          <div class="p-card__btn">
+            <a href="" class="c-text-btn">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+      <div class="p-cards__item p-card">
+        <div class="p-card__category">
+          食
+          <span>food</span>
+        </div>
+        <figure class="p-card__img">
+          <img src="images/img_card03.jpg" alt="園庭を眺める人の後ろ姿">
+        </figure>
+        <div class="p-card__body">
+          <h3 class="p-card__title">食を堪能する</h3>
+          <div class="p-card__excerpt">
+            <p>穏やかな気候で育ったフレッシュな野菜や果物を堪能できます。</p>
+          </div>
+          <div class="p-card__btn">
+            <a href="" class="c-text-btn">詳しく見る</a>
+          </div>
+        </div>
       </div>
     </div>
+
+  <!-- -->
 
 
 
 
     <!-- メインビュー -->
-    <div class="p-mv l-mv">
-      <div class="p-mv__wrapper">
-        <div class="p-mv__img">
-          <img src="./images/mv.jpg" alt="医者と子どもが笑っている写真">
+
+    <!-- ココメイトステイ -->
+    <section class="p-about">
+      <div class="p-about__inner l-inner">
+        <div class="p-about__head">
+          <h2 class="p-about__title">Cocomate Stay</h2>
+          <p class="p-about__text">
+            大切な人と過ごす場所、
+            ここめいと。
+            日本の伝統と
+            現代の快適さが融合した、
+            穏やかな空間で
+            お迎えいたします。
+          </p>
+          <p class="p-about__text">
+            四季折々の風情が楽しめる
+            ロケーションが特長です。
+          </p>
+          <p class="p-about__text">
+            春は桜が咲き誇り、
+            夏は青々とした自然が
+            目を楽しませ、
+            秋は紅葉が鮮やかに染まり、
+            冬は雪景色が
+            美しい風景が広がります。
+            季節ごとの風情を
+            お楽しみいただきながら、
+            特別な思い出をつくりませんか。
+          </p>
         </div>
-        <p class="p-mv__catchcopy">
-          健やかな笑顔があふれる<br>
-          小児クリニック
-          <span>The clinic with the most smiles of children</span>
-        </p>
-        <div class="p-mv__copyright">
-          <small>&copy; cocomate All Rights Reserved.</small>
+        <div class="p-about__slide swiper" id="about-slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/img_about01.jpg" alt="サウナの写真"></div>
+            <div class="swiper-slide"><img src="images/img_about02.jpg" alt="温泉の写真"></div>
+            <div class="swiper-slide"><img src="images/img_about03.jpg" alt="料理の写真"></div>
+            <div class="swiper-slide"><img src="images/img_about04.jpg" alt="入口の写真"></div>
+            <div class="swiper-slide"><img src="images/img_about05.jpg" alt="部屋の写真"></div>
+            <div class="swiper-slide"><img src="images/img_about06.jpg" alt="部屋から外を眺める女性の写真"></div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+
+    
+
+    <!-- ギャラリー -->
+    <section class="p-gallery">
+      <div class="p-gallery__inner l-inner">
+        <div class="p-gallery__head">
+          <h2 class="p-gallery__title c-section-title" data-en="gallery">ギャラリー</h2>
+          <div class="p-gallery__btn">
+            <a href="" class="c-text-btn">詳しく見る</a>
+          </div>
+        </div>
+        <div class="p-gallery__slide swiper" id="gallery-slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/img_gallery01.jpg" alt="和風な部屋の写真"></div>
+            <div class="swiper-slide"><img src="images/img_gallery02.jpg" alt="サウナの写真"></div>
+            <div class="swiper-slide"><img src="images/img_gallery03.jpg" alt="すき焼き鍋の写真"></div>
+            <div class="swiper-slide"><img src="images/img_gallery04.jpg" alt="温泉の写真"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <div class="test2"></div>
+
 
   </main>
 

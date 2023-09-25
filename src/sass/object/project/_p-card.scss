@@ -2,14 +2,10 @@
 
 .p-card{
   width: 100%;
-  width: 352px;
-  background-color: $white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: relative;
-  margin-left: 100px;
-  padding-top: myrem(30);
+  padding-top: myrem(40);
 }
 
 .p-card__category{
@@ -29,6 +25,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  margin-top: myrem(8);
 }
 .p-card__category span{
   content: "";
@@ -44,7 +41,7 @@
   text-transform: capitalize;
   display: flex;
   align-items: center;
-  margin-top: myrem(14);
+  margin-top: myrem(4);
   margin-right: myrem(-30);
 }
 .p-card__category span::before{
@@ -54,6 +51,7 @@
   height: myrem(1);
   background-color: $black;
   margin-right: myrem(8);
+  margin-top: 3px;
 }
 
 
@@ -68,7 +66,7 @@
   object-fit: cover;
 }
 .p-card__body{
-  
+  margin-top: myrem(32);
   @include mq("md"){
 
   }
@@ -87,13 +85,14 @@
   font-family: $font-ja;
   font-size: myrem(15);
   font-weight: 400;
-  line-height: calc(27/15);
-  letter-spacing: 0;
+  line-height: 2;
+  letter-spacing: 0.04em;
   color: $text;
   margin-top: myrem(16);
+  margin-top: myrem(32);
   
 }
 .p-card__btn{
   width: 100%;
-  padding-top: myrem(55);
+  padding-top: myrem(48);
 }

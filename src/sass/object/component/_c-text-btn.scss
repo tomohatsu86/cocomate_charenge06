@@ -7,12 +7,13 @@
   line-height: calc(24/15);
   letter-spacing: 0.04em;
   color: $text;
-  width: myrem(144);
+  min-width: myrem(144);
   transition: all .3s;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .c-text-btn::after{
   content: "";
   display: inline-block;

@@ -1,14 +1,20 @@
 @use "global" as *;
 
 .p-cards{
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   column-gap: myrem(40);
   row-gap: myrem(80);
   
   @include mq("md"){
-    column-gap: myrem(40);
+    column-gap: myrem(42);
     row-gap: myrem(116);
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+.p-cards__item:nth-child(2){
+  @include mq("md"){
+    margin-top: myrem(50);
   }
 }

@@ -9,14 +9,16 @@
   color: $white;
   text-align: center;
   border: 1px solid $white;
-  display: block;
+  display: inline flow-root;
   padding: myrem(15);
   min-width: myrem(170);
   transition: all .3s;
 }
 @media (hover: hover) and (pointer: fine) {
-  .c-btn-header:hover{
-    background-color: $white;
-    color: $text;
-  }
+
+}
+
+.c-btn-header:hover{
+  background-color: $white;
+  color: $text;
 }
