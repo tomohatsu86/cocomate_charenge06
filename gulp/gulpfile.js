@@ -60,7 +60,7 @@ const cssSass = () => {
     }))
     .pipe(postcss([cssnext({
       features: {
-        rem: false
+        rem: true
       }
     },browsers)])) // 最新CSS使用を先取り
     .pipe(sourcemaps.write('./')) // ソースマップの出力先をcssファイルから見たパスに指定

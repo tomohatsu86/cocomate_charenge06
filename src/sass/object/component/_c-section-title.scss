@@ -1,10 +1,5 @@
 @use "global" as *;
 
-.test{
-  width: 50%;
-}
-
-
 .c-section-title{
   display: block;
   width: 100%;
@@ -36,7 +31,7 @@
   font-weight: 400;
   line-height: calc(60 / 60);
   letter-spacing: 0.04em;
-  color: #F3F3F3;
+  color: $text_en;
   writing-mode: initial;
   // white-space:nowrap;
   text-transform: capitalize;

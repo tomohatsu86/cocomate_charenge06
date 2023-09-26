@@ -127,11 +127,13 @@ const gallerySwiper = new Swiper('#gallery-slide', {
 
 //ココメイトステイスライダー
 const aboutSwiper = new Swiper('#about-slide', {
-  // loop: true,
+  loop: true,
   slidesPerView: 'auto',
   spaceBetween: 20,
   speed: 6000,
   centeredSlides: true,
+  initialSlide: 1,
+  grabCursor: true,
   
   autoplay: { 
     delay: 0,
@@ -142,6 +144,7 @@ const aboutSwiper = new Swiper('#about-slide', {
     768: {
       slidesPerView: 'auto',
       spaceBetween: 24,
+      initialSlide: 2,
     },
     1200: {
       slidesPerView: 'auto',
