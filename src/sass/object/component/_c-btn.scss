@@ -22,6 +22,7 @@
 .c-btn span{
   position: absolute;
   transition: all .3s;
+  z-index: 1;
 }
 .c-btn span:nth-child(1){
   top: 0;
@@ -94,6 +95,7 @@
 .c-btn.c-btn--white span{
   position: absolute;
   transition: all .3s;
+  z-index: 1;
 }
 .c-btn.c-btn--white span:nth-child(1){
   top: 0;

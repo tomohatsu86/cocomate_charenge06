@@ -45,6 +45,13 @@
   }
 }
 
-.c-section-title.c-section-title--white::after{
+.c-section-title.c-section-title--white::before{
   color: #fff;
+}
+.c-section-title.c-section-title--opacity02{
+  color: #fff;
+}
+.c-section-title.c-section-title--opacity02::before{
+  color: rgba(#fff, 0.2);
+
 }
