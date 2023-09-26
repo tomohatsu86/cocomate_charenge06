@@ -101,26 +101,30 @@ $(window).scroll(function () {
 });
 
 
-//ギャラリースライダー
-const gallerySwiper = new Swiper('#gallery-slide', {
-  loop: true,
+
+//メインビュースライダー
+const mvSwiper = new Swiper('#mv-slide', {
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
   slidesPerView: 1,
-  spaceBetween: 20,
-  speed: 9000,
-  centeredSlides: true,
+  speed: 5000,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    type: 'fraction',
+    renderFraction: function(currentClass, totalClass) {
+      return '<span class="custom-pagenation"><span class="' + currentClass + '"></span><span class="custom-pagenation-bar"></span><span class="' + totalClass + '"></span></span>';
+    },
+  },
   
   autoplay: { 
-    delay: 0,
-    disableOnInteraction: false,
-    waitForTransition: false,
+    delay: 5000,
   },
   breakpoints: {
     768: {
-      slidesPerView: 3,
-      spaceBetween: 32,
-    },
-    1200: {
-      slidesPerView: 4,
+
     },
   },
 });
@@ -148,6 +152,31 @@ const aboutSwiper = new Swiper('#about-slide', {
     },
     1200: {
       slidesPerView: 'auto',
+    },
+  },
+});
+
+
+//ギャラリースライダー
+const gallerySwiper = new Swiper('#gallery-slide', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  speed: 9000,
+  centeredSlides: true,
+  
+  autoplay: { 
+    delay: 0,
+    disableOnInteraction: false,
+    waitForTransition: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+    1200: {
+      slidesPerView: 4,
     },
   },
 });

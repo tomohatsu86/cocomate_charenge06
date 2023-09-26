@@ -4,6 +4,11 @@
   width: 100%;
   height: myrem(100);
   // background-color: #222;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   
   @include mq("md"){
     height: myrem(137);
@@ -12,9 +17,19 @@
 .p-header__inner{
   height: inherit;
   display: flex;
-  align-items: center;
   align-items: start;
   justify-content: space-between;
+  width: 100%;
+  padding-right: myrem(strip-unit($padding-sp));
+  padding-left: myrem(strip-unit($padding-sp));
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq(md) {
+    padding-right: myrem(80);
+    padding-left: myrem(80);
+  }
+
 
 }
 .p-header__logo{

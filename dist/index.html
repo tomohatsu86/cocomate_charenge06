@@ -35,8 +35,8 @@
 <body>
   
   <!-- ヘッダー -->
-  <!-- <header class="p-header l-header">
-    <div class="p-header__inner l-inner">
+  <header class="p-header l-header">
+    <div class="p-header__inner">
       <h1 class="p-header__logo">
         <a href="#">
           <img src="./images/logo_header.svg" alt="ここめいと">
@@ -75,7 +75,7 @@
         </div>
       </nav>
     </div>
-  </header> -->
+  </header>
   
   
   <main>
@@ -84,9 +84,28 @@
   <!-- -->
 
 
-
-
     <!-- メインビュー -->
+    <div class="p-mv">
+      <div class="p-mv__wrapper">
+        <div class="p-mv__slide swiper" id="mv-slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/img_mv01.jpg" alt="露天風呂の写真"></div>
+            <div class="swiper-slide"><img src="images/img_mv02.jpg" alt="旅館の外観の写真"></div>
+            <div class="swiper-slide"><img src="images/img_mv03.jpg" alt="寝室の写真"></div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <p class="p-mv__catchcopy">
+          大切な人と過ごす場所、<br>
+          ここめいと。
+          <span>A place to spend time <br class="u-mobile">with loved ones, cocomate.</span>
+        </p>
+        <div class="p-mv__sns">
+          <a href="" class="p-mv__sns-insta">instagram</a>
+          <a href="" class="p-mv__sns-twitter">twitter</a>
+        </div>
+      </div>
+    </div>
 
     <!-- ココメイトステイ -->
     <section class="p-about">
@@ -130,11 +149,10 @@
           <div class="swiper-slide"><img src="images/img_about06.jpg" alt="部屋から外を眺める女性の写真"></div>
         </div>
       </div>
-
     </section>
 
 
-    
+
 
     <!-- ギャラリー -->
     <section class="p-gallery">
