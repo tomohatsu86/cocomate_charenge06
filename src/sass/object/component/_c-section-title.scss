@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .c-section-title{
-  display: block;
+  display: inline-block;
   width: 100%;
   height: myrem(80);
   font-family: $font-ja;
@@ -24,8 +24,8 @@
 }
 .c-section-title::before{
   content: attr(data-en);
-  display: block;
-  width: 100%;
+  display: inline-block;
+  // width: 100%;
   font-family: $font-en;
   font-size: myrem(60);
   font-weight: 400;

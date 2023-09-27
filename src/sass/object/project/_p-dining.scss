@@ -1,0 +1,130 @@
+@use "global" as *;
+
+.p-dining {
+  width: 100%;
+  padding-top: myrem(200);
+  padding-bottom: myrem(138);
+  position: relative;
+  overflow-x: hidden;
+  
+  @include mq("md"){
+    padding-top: myrem(125);
+    padding-bottom: myrem(138);
+  }
+}
+.p-dining::before{
+  content: "";
+  display: block;
+  position: absolute;
+}
+.p-dining::before{
+  width: myrem(320);
+  height: myrem(98);
+  background: url(../images/img_dining-bg02.png) no-repeat center center/contain;
+  right: 0;
+  bottom: 0;
+  @include mq("md"){
+    width: myrem(635);
+    height: myrem(191);
+  }
+}
+.p-dining__wrapper{
+  width: 100%;
+  max-width: myrem(1440);
+  margin-inline: auto;
+  position: relative;
+}
+.p-dining__wrapper::before{
+  content: "";
+  display: block;
+  position: absolute;
+}
+.p-dining__wrapper::before{
+  width: myrem(215);
+  height: myrem(67);
+  background: url(../images/img_dining-bg01.png) no-repeat center center/contain;
+  top: myrem(250);
+  right: myrem(-81);
+  @include mq("md"){
+    width: myrem(264);
+    height: myrem(67);
+    top: myrem(-75);
+    right: myrem(-81);
+  }
+}
+.p-dining__img {
+  width: 100%;
+  max-width: myrem(450);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  
+  @include mq("md"){
+    max-width: myrem(720);
+    top: myrem(106);
+    left: 0;
+    transform: initial;
+
+  }
+}
+.p-dining__img img{
+  aspect-ratio: 640 / 432;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-dining__inner {
+
+}
+.p-dining__content {
+  width: 100%;
+  min-height: myrem(660);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @include mq("md"){
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+}
+
+.p-dining__title {
+  // width: 100%;
+  width: myrem(656);
+}
+.p-dining__body {
+  width: 100%;
+  max-width: myrem(480);
+  margin-left: myrem(20);
+  margin-top: myrem(20);
+  
+  @include mq("md"){
+    margin-left: myrem(80);
+    margin-top: myrem(52);
+
+  }
+
+}
+.p-dining__text {
+  font-family: $font-ja;
+  font-size: myrem(15);
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: $text;
+}
+.p-dining__btn {
+  margin-top: myrem(40);
+  
+  @include mq("md"){
+    margin-top: myrem(80);
+  }
+}
+
+
+
+

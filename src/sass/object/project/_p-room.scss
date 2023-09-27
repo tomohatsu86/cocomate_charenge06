@@ -1,0 +1,131 @@
+@use "global" as *;
+
+.p-room {
+  width: 100%;
+  padding-top: myrem(40);
+  padding-bottom: 0;
+  position: relative;
+  
+  @include mq("md"){
+    padding-top: myrem(125);
+    padding-bottom: 0;
+  }
+}
+.p-room::before{
+  content: "";
+  display: block;
+  position: absolute;
+}
+.p-room::before{
+  width: myrem(200);
+  height: myrem(311);
+  background: url(../images/img_room-bg02.png) no-repeat center center/contain;
+  left: 0;
+  bottom: myrem(-260);
+  @include mq("md"){
+    width: myrem(337);
+    height: myrem(311);
+    left: 0;
+    bottom: myrem(-200);
+  }
+}
+
+.p-room__wrapper{
+  width: 100%;
+  max-width: myrem(1440);
+  margin-inline: auto;
+  position: relative;
+}
+.p-room__wrapper::before{
+  content: "";
+  display: block;
+  position: absolute;
+}
+.p-room__wrapper::before{
+  width: myrem(160);
+  height: myrem(66);
+  background: url(../images/img_room-bg01.png) no-repeat center center/contain;
+  top: myrem(230);
+  right: myrem(0);
+  @include mq("md"){
+    width: myrem(237);
+    height: myrem(66);
+    top: myrem(-63);
+    right: myrem(124);
+  }
+}
+.p-room__img {
+  width: 100%;
+  max-width: myrem(450);
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: -1;
+  
+  @include mq("md"){
+    max-width: myrem(720);
+    top: myrem(104);
+    right: 0;
+    transform: initial;
+  }
+}
+.p-room__img img{
+  aspect-ratio: 640 / 432;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-room__inner {
+
+}
+.p-room__content {
+  width: 100%;
+  min-height: myrem(650);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+  @include mq("md"){
+    align-items: flex-start;
+    justify-content: flex-start;
+
+  }
+}
+
+.p-room__title {
+
+}
+.p-room__body {
+  width: 100%;
+  max-width: myrem(480);
+  margin-left: myrem(20);
+  margin-top: myrem(20);
+  
+  @include mq("md"){
+    margin-left: myrem(80);
+    margin-top: myrem(52);
+
+  }
+
+}
+.p-room__text {
+  font-family: $font-ja;
+  font-size: myrem(15);
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: $text;
+}
+.p-room__btn {
+  margin-top: myrem(40);
+  
+  @include mq("md"){
+    margin-top: myrem(80);
+  }
+}
+
+
+
+
