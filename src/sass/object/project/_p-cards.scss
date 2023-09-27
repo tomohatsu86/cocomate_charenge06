@@ -5,10 +5,10 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   column-gap: myrem(40);
-  row-gap: myrem(80);
+  row-gap: myrem(40);
   
   @include mq("md"){
-    column-gap: myrem(42);
+    column-gap: myrem(72);
     row-gap: myrem(116);
     grid-template-columns: repeat(3, 1fr);
   }

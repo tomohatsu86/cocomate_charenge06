@@ -1,0 +1,63 @@
+@use "global" as *;
+
+.p-blog{
+  padding-top: myrem(60);
+  padding-bottom: myrem(165);
+  position: relative;
+  overflow-x: hidden;
+
+  
+  @include mq("md"){
+    padding-top: myrem(158);
+    padding-bottom: myrem(162);
+  }
+}
+.p-blog::before{
+  content: "";
+  display: block;
+  position: absolute;
+}
+.p-blog::before{
+  width: myrem(300);
+  height: myrem(115);
+  background: url(../images/img_blog-bg02.png) no-repeat center center/contain;
+  left: myrem(-15);
+  bottom: 0;
+  @include mq("md"){
+    width: myrem(492);
+    height: myrem(190);
+    left: myrem(-15);
+    bottom: 0;
+  }
+}
+.p-blog__inner{
+  max-width: myrem(1300);
+  position: relative;
+}
+.p-blog__inner::before{
+  content: "";
+  display: block;
+  position: absolute;
+}
+.p-blog__inner::before{
+  width: myrem(200);
+  height: myrem(69);
+  background: url(../images/img_blog-bg01.png) no-repeat center center/contain;
+  bottom: myrem(-50);
+  right: myrem(-50);
+  @include mq("md"){
+    width: myrem(264);
+    height: myrem(69);
+    bottom: myrem(-50);
+    right: myrem(-118);
+  }
+}
+.p-blog__contents{
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
+
+  // @include mq("md"){
+  //   padding-left: 0;
+  //   padding-right: 0;
+  // }
+}

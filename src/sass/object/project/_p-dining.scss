@@ -8,8 +8,8 @@
   overflow-x: hidden;
   
   @include mq("md"){
-    padding-top: myrem(125);
-    padding-bottom: myrem(138);
+    padding-top: myrem(100);
+    padding-bottom: myrem(102);
   }
 }
 .p-dining::before{
@@ -104,7 +104,7 @@
   
   @include mq("md"){
     margin-left: myrem(80);
-    margin-top: myrem(52);
+    margin-top: myrem(57);
 
   }
 

@@ -13,7 +13,7 @@
   font-size: myrem(60);
   font-weight: 400;
   line-height: calc(60 / 60);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.2em;
   color: $text_brown;
   width: 100%;
   writing-mode: vertical-lr;
@@ -41,7 +41,7 @@
   text-transform: capitalize;
   display: flex;
   align-items: center;
-  margin-top: myrem(4);
+  margin-top: myrem(7);
   margin-right: myrem(-30);
 }
 .p-card__category span::before{
@@ -50,7 +50,7 @@
   width: myrem(38);
   height: myrem(1);
   background-color: $black;
-  margin-right: myrem(8);
+  margin-right: myrem(13);
   margin-top: 3px;
 }
 
@@ -66,9 +66,9 @@
   object-fit: cover;
 }
 .p-card__body{
-  margin-top: myrem(32);
+  margin-top: myrem(20);
   @include mq("md"){
-
+    margin-top: myrem(32);
   }
 }
 .p-card__title{
@@ -88,11 +88,17 @@
   line-height: 2;
   letter-spacing: 0.04em;
   color: $text;
-  margin-top: myrem(16);
-  margin-top: myrem(32);
+  margin-top: myrem(20);
   
+  @include mq("md"){
+    margin-top: myrem(32);
+  }
 }
 .p-card__btn{
   width: 100%;
-  padding-top: myrem(48);
+  padding-top: myrem(20);
+  
+  @include mq("md"){
+    padding-top: myrem(48);
+  }
 }

@@ -26,7 +26,7 @@
     width: myrem(337);
     height: myrem(311);
     left: 0;
-    bottom: myrem(-200);
+    bottom: myrem(-175);
   }
 }
 
@@ -105,7 +105,7 @@
   
   @include mq("md"){
     margin-left: myrem(80);
-    margin-top: myrem(52);
+    margin-top: myrem(57);
 
   }
 
