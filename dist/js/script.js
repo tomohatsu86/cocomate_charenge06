@@ -175,8 +175,9 @@ const gallerySwiper = new Swiper('#gallery-slide', {
       slidesPerView: 3,
       spaceBetween: 32,
     },
-    1200: {
+    1441: {
       slidesPerView: 4,
+      spaceBetween: 32,
     },
   },
 });

@@ -11,7 +11,7 @@
   letter-spacing: 0.2em;
   color: $text;
   padding-left: myrem(50);
-  padding-top: myrem(10);
+  padding-top: myrem(7);
   writing-mode: vertical-lr;
   position: relative;
   z-index: 10;
@@ -40,6 +40,10 @@
   top: 0;
   left: 0;
   z-index: -1;
+
+  @include mq("sm"){
+    font-size: myrem(80);
+  }
 
   @include mq("md"){
     font-size: myrem(160);

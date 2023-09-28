@@ -3,7 +3,7 @@
 .p-activity {
   width: 100%;
   background-image: url(../images/img_active01.jpg);
-  background-position: bottom 10px right 0;
+  background-position: bottom 0px right 0;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: myrem(80);
@@ -14,7 +14,7 @@
   
   @include mq("md"){
     padding-top: myrem(155);
-    padding-bottom: myrem(170);
+    padding-bottom: myrem(165);
   }
 }
 .p-activity::after{
@@ -72,7 +72,7 @@
   
   @include mq("md"){
     margin-left: myrem(80);
-    margin-top: myrem(52);
+    margin-top: myrem(50);
     order: 1;
   }
 

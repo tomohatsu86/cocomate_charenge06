@@ -1,7 +1,13 @@
 @use "global" as *;
 
 .p-gallery{
-  padding: myrem(160) 0;
+  padding-top: myrem(80);
+  padding-bottom: myrem(80);
+  
+  @include mq("md"){
+    padding-top: myrem(155);
+    padding-bottom: myrem(160);
+  }
 }
 .p-gallery__inner{
   position: relative;
@@ -22,8 +28,8 @@
   @include mq("md"){
     width: myrem(264);
     height: myrem(69);
-    top: myrem(-85);
-    right: myrem(34);
+    top: myrem(-80);
+    right: myrem(60);
   }
 }
 .p-gallery__inner::after{
