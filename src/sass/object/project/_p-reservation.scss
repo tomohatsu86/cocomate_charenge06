@@ -2,7 +2,7 @@
 
 .p-reservation {
   width: 100%;
-  height: myrem(451);
+  height: myrem(300);
   background-image: url(../images/img_reserve-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -14,6 +14,7 @@
   overflow: hidden;
   
   @include mq("md"){
+    height: myrem(451);
     // padding-top: myrem(170);
     // padding-bottom: myrem(165);
   }
@@ -56,16 +57,18 @@
   color: rgba(#fff,0.6);
   text-transform: capitalize;
   position: absolute;
-  bottom: myrem(-42);
+  bottom: myrem(-14);
   right: myrem(-5);
   z-index: -1;
-
+  
   @include mq("sm"){
     font-size: myrem(80);
+    bottom: myrem(-18);
   }
-
+  
   @include mq("md"){
     font-size: myrem(160);
+    bottom: myrem(-42);
   }
 }
 .p-reservation__inner {
@@ -92,11 +95,15 @@
 }
 .p-reservation__title {
   font-family: $font-ja;
-  font-size: myrem(24);
+  font-size: myrem(18);
   font-weight: 400;
   line-height: calc(38 / 24);
   letter-spacing: 0.04em;
   color: $white;
+
+  @include mq(md) {
+    font-size: myrem(24);
+  }
 }
 .p-reservation__tel {
   display: block;
@@ -106,15 +113,17 @@
   line-height: 1;
   letter-spacing: 0.05em;
   color: $white;
-  margin-top: myrem(16);
-
+  margin-top: myrem(10);
+  
   @include mq("md"){
     font-size: myrem(24);
+    margin-top: myrem(16);
   }
 }
 .p-reservation__tel span{
-  font-size: myrem(40);
+  font-size: myrem(28);
   line-height: calc(64 / 40);
+
   @include mq("md"){
     font-size: myrem(40);
   }
