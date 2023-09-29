@@ -9,7 +9,7 @@
   color: $white;
   text-align: center;
   border: 1px solid $white;
-  display: inline flow-root;
+  display: inline-block;
   padding: myrem(15);
   min-width: myrem(170);
   transition: all .3s;

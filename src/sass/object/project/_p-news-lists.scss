@@ -3,7 +3,7 @@
 .p-news-list{
   
 }
-.p-news-list__item:first-child{
+.p-news-list__item{
   padding-bottom: myrem(20);
   
   @include mq("md"){

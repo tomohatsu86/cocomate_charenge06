@@ -10,7 +10,7 @@
   
   @include mq("md"){
     padding-top: myrem(155);
-    padding-bottom: myrem(158);
+    padding-bottom: myrem(138);
   }
 }
 .p-news__inner {
@@ -28,23 +28,29 @@
 .p-news__content {
   display: contents;
   margin-right: myrem(30);
-
+  
   @include mq("md"){
     display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     // order: 1;
     // flex: 1;
+
   }
 }
 
 .p-news__title {
   color: $white;
+  order: 1;
+
 }
 .p-news__body {
   width: 100%;
   order: 3;
   
   @include mq("md"){
-    order: 1;
+    order: 2;
   }
 
 }
@@ -58,7 +64,8 @@
 }
 .p-news__btn {
   margin-top: myrem(60);
-  
+  // margin-top: auto;
+
   @include mq("md"){
     margin-top: myrem(146);
   }
@@ -67,6 +74,11 @@
   width: 100%;
   max-width: myrem(780);
   margin-top: myrem(24);
+  order: 2;
+
+  @include mq("md"){
+    order: 3;
+  }
 }
 
 

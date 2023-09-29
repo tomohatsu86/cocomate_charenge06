@@ -6,10 +6,9 @@
   position: relative;
   overflow-x: hidden;
 
-  
   @include mq("md"){
-    padding-top: myrem(158);
-    padding-bottom: myrem(162);
+    padding-top: myrem(155);
+    padding-bottom: myrem(160);
   }
 }
 .p-blog::before{
@@ -21,17 +20,17 @@
   width: myrem(300);
   height: myrem(115);
   background: url(../images/img_blog-bg02.png) no-repeat center center/contain;
-  left: myrem(-15);
+  left: 0;
   bottom: 0;
   @include mq("md"){
     width: myrem(492);
     height: myrem(190);
-    left: myrem(-15);
+    left: 0;
     bottom: 0;
   }
 }
 .p-blog__inner{
-  max-width: myrem(1300);
+  max-width: myrem(1280);
   position: relative;
 }
 .p-blog__inner::before{
@@ -49,15 +48,16 @@
     width: myrem(264);
     height: myrem(69);
     bottom: myrem(-50);
-    right: myrem(-118);
+    right: myrem(-145);
   }
 }
 .p-blog__contents{
-  padding-left: $padding-sp;
-  padding-right: $padding-sp;
-
+  // padding-left: 0;
+  // padding-right: 0;
+  
   // @include mq("md"){
-  //   padding-left: 0;
-  //   padding-right: 0;
+  //   padding-left: myrem(30);
+  //   padding-right: myrem(30);
   // }
+
 }

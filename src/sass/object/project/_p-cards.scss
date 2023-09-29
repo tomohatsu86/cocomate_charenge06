@@ -6,11 +6,13 @@
   grid-template-columns: repeat(1, 1fr);
   column-gap: myrem(40);
   row-gap: myrem(40);
+  padding-left: myrem(20);
   
   @include mq("md"){
     column-gap: myrem(72);
     row-gap: myrem(116);
     grid-template-columns: repeat(3, 1fr);
+    padding-left: myrem(25);
   }
 }
 .p-cards__item:nth-child(2){
