@@ -15,7 +15,7 @@
     padding-left: myrem(25);
   }
 }
-.p-cards__item:nth-child(2){
+.p-cards__item:nth-child(3n+2){
   @include mq("md"){
     margin-top: myrem(50);
   }
