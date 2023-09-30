@@ -15,10 +15,9 @@
   transition: all .3s;
 }
 @media (hover: hover) and (pointer: fine) {
-
+  .c-btn-footer:hover{
+    background-color: $white;
+    color: $text;
+  }
 }
 
-.c-btn-footer:hover{
-  background-color: $white;
-  color: $text;
-}

@@ -17,6 +17,7 @@
 .p-header__inner{
   height: inherit;
   display: flex;
+
   align-items: start;
   justify-content: space-between;
   width: 100%;
@@ -135,8 +136,9 @@
   flex-direction: column;
   
   @include mq("md"){
-    height: inherit;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 }
 .p-header__nav-item{

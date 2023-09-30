@@ -100,7 +100,11 @@
 .p-footer__policies a:nth-child(n+2){
   margin-top: myrem(16);
 }
-
+@media (hover: hover) and (pointer: fine) {
+  .p-footer__policies a:hover{
+    opacity: 0.7;
+  }
+}
 .p-footer__sns{
   display: grid;
   grid-template-columns: repeat(2, myrem(22));

@@ -15,9 +15,11 @@
   position: relative;
   transition: all .3s;
 }
-.c-btn:hover{
-  background-color: $black;
-  color: $white;
+@media (hover: hover) and (pointer: fine) {
+  .c-btn:hover{
+    background-color: $black;
+    color: $white;
+  }
 }
 .c-btn span{
   position: absolute;
