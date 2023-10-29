@@ -3,6 +3,7 @@
 .p-gallery{
   padding-top: myrem(80);
   padding-bottom: myrem(80);
+  overflow: hidden;
   
   @include mq("md"){
     padding-top: myrem(155);
