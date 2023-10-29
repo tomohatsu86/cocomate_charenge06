@@ -2,22 +2,13 @@
 
 .p-reservation {
   width: 100%;
-  height: myrem(300);
   background-image: url(../images/img_reserve-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // padding-top: myrem(170);
-  // padding-bottom: myrem(165);
   position: relative;
   z-index: 0;
   overflow: hidden;
-  
-  @include mq("md"){
-    height: myrem(451);
-    // padding-top: myrem(170);
-    // padding-bottom: myrem(165);
-  }
 }
 .p-reservation::after{
   content: "";
@@ -33,17 +24,12 @@
 }
 .p-reservation__wrapper{
   width: 100%;
-  height: inherit;
-  padding-right: myrem(strip-unit($padding-sp));
-  padding-left: myrem(strip-unit($padding-sp));
   margin-right: auto;
   margin-left: auto;
   position: relative;
   
   @include mq(md) {
     max-width: myrem(1490);
-    padding-right: myrem(strip-unit($padding-pc));
-    padding-left: myrem(strip-unit($padding-pc));
   }
 }
 .p-reservation__wrapper::after{
@@ -73,7 +59,6 @@
 }
 .p-reservation__inner {
   width: 100%;
-  height: inherit;
   position: relative;
   @include mq(md) {
     max-width: myrem(1090);
@@ -81,15 +66,13 @@
 }
 
 .p-reservation__box {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
   z-index: 5;
-  padding-left: $padding-sp;
-
+  padding-top: myrem(80);
+  padding-bottom: myrem(80);
+  
   @include mq(md) {
-    padding-left: $padding-pc;
+    padding-top: myrem(167);
+    padding-bottom: myrem(166);
   }
 
 }

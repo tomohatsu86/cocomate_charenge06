@@ -8,18 +8,20 @@
   font-size: myrem(14);
   font-weight: 400;
   line-height: calc(20/20);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   color: $text;
   padding-left: myrem(50);
-  padding-top: myrem(7);
+  // padding-top: myrem(7);
   writing-mode: vertical-lr;
   position: relative;
   z-index: 10;
   
   @include mq("md"){
     font-size: myrem(20);
+    letter-spacing: 0.2em;
     height: myrem(160);
     padding-left: myrem(120);
+    padding-top: myrem(7);
   }
 
 }

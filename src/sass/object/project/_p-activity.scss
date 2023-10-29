@@ -65,7 +65,6 @@
   color: $white;
 }
 .p-activity__body {
-  width: 100%;
   margin-left: myrem(20);
   margin-top: myrem(30);
   order: 3;
@@ -94,13 +93,13 @@
 }
 .p-activity__img {
   width: 100%;
-  max-width: myrem(640);
   position: relative;
   margin-top: 0;
   flex-shrink: 0;
   order: 2;
   
   @include mq("md"){
+    max-width: myrem(640);
     margin-top: myrem(20);
   }
 }
